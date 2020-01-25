@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Создание слайдера с использованием JavaScript (библиотека jQuery)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="script/jquery.js"></script>
+  <script src="script/responsiveslides.min.js"></script>
+  <script>
+	$(function(){
+		$("#slider3").responsiveSlides({
+		manualControls:'#slider3-pager',
+		maxwidth:540
+		});
+	});
+  </script>
+  <link rel="stylesheet" href="CSS/responsiveslides.css">
+  <link rel="stylesheet" href="CSS/demo.css">
+ </head>
+<body>
+  <div id="wrapper">
+    <h1>Учебный центр "Шаг в Будущее"</h1>
+    <h2>Простой и эффектный слайдер на jQuery + CSS</h2>
+    <ul class="rslides" id="slider3">
+		<li><img src="images/1.jpg" alt=""></li>
+		<li><img src="images/2.jpg" alt=""></li>
+		<li><img src="images/3.jpg" alt=""></li>
+    </ul>
+    <ul id="slider3-pager">
+		<li><a href="#"><img src="images/1_thumb.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/2_thumb.jpg" alt=""></a></li>
+		<li><a href="#"><img src="images/3_thumb.jpg" alt=""></a></li>
+    </ul>
+	<a href="http://www.exam.by/" id="download">Посетите наш сайт!</a>
+    <p class="footer">Данное занятие разработано специалистами <a href="http://www.exam.by/ru/main.aspx?guid=1081"> учебного центра "Шаг в будущее"</a>. Подробнее о других семинарах в разделе <a href="http://www.exam.by/ru/main.aspx?guid=2611">Семинары для педагогов</a>.</p>
+   </div>
+</body>
+</html>
